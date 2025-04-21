@@ -1,0 +1,23 @@
+<owl-carousel-o class="carrusel-pc" [options]="customOptions">
+  <ng-container *ngFor="let image of images">
+    <ng-template carouselSlide>
+      <img
+        [src]="image"
+        alt="Image"
+        style="width: 100%; height: auto; margin: auto"
+      />
+    </ng-template>
+  </ng-container>
+</owl-carousel-o>
+
+<owl-carousel-o class="carrusel-movil" [options]="customOptions">
+  <ng-container *ngFor="let image of imagesMovil">
+    <ng-template carouselSlide>
+      <img
+        [src]="image"
+        alt="Image"
+        style="width: 100%; height: auto; margin: auto"
+      />
+    </ng-template>
+  </ng-container>
+</owl-carousel-o>

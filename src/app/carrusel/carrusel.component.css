@@ -1,0 +1,66 @@
+::ng-deep .cdk-overlay-pane.mat-mdc-dialog-panel {
+  min-width: 60vw; /* Cambia el color de fondo a rojo */
+}
+
+/* Estilos básicos del contenedor */
+::ng-deep .owl-carousel .owl-nav {
+  position: absolute;
+  top: 50%; /* Alinear en el centro vertical */
+  width: 100%; /* Expandir para cubrir el ancho del carrusel */
+  display: flex;
+  justify-content: space-between; /* Botones a los extremos */
+  transform: translateY(-50%);
+  /* pointer-events: none; Evita interferencias con la navegación */
+}
+
+::ng-deep .owl-carousel .owl-nav button {
+  background-color: rgba(245, 0, 0, 1) !important; /* Fondo semi-transparente */
+  border: none !important;
+  font-size: 30px !important;
+  color: rgb(255, 0, 0) !important;
+  width: 60px !important;
+  height: 60px !important;
+  border-radius: 50% !important;
+  cursor: pointer !important;
+  pointer-events: all !important; /* Habilitar clic en botones */
+  z-index: 1000 !important;
+}
+
+::ng-deep .owl-carousel .owl-nav button.owl-prev {
+  left: -20px; /* Ajustar posición a la izquierda */
+}
+
+::ng-deep .owl-carousel .owl-nav button.owl-next {
+  right: -20px; /* Ajustar posición a la derecha */
+}
+
+::ng-deep .owl-carousel .owl-nav button:hover {
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.8
+  ); /* Cambia el color al pasar el mouse */
+}
+
+::ng-deep owl-stage {
+  text-align: center;
+}
+
+.carrusel-movil {
+  display: none;
+}
+
+.carrusel-pc {
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .carrusel-pc {
+    display: none;
+  }
+
+  .carrusel-movil {
+    display: block;
+  }
+}
